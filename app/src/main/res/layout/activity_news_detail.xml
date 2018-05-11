@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.news.android.himanshu.newspin.elasticView.ElasticDragDismissFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/draggable_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:dragDismissDistance="112dp"
+    app:dragDismissScale="0.95">
+
+    <ImageView
+        android:id="@+id/newsIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_grey"
+        android:minHeight="@dimen/news_detail_image"
+        android:scaleType="centerCrop"
+        app:layout_collapseMode="parallax" />
+
+    <FrameLayout
+        android:id="@+id/back_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="9dp">
+
+        <!-- animate alpha in enterAnimation
+             margins push out parent for the borderless ripple -->
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="?android:actionBarSize"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/mid_grey_ripple"
+            android:src="@drawable/ic_arrow_back" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/news_detail_image"
+        android:background="@android:color/white"
+        android:nestedScrollingEnabled="true"
+        android:paddingTop="25dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/newsHeadlineTv"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="News Headline"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="10dp" />
+
+            <TextView
+                android:id="@+id/newsDescriptionTv"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="News Description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newsHeadlineTv" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/shareFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:elevation="0dp"
+                android:src="@drawable/ic_share"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linkFab"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newsDescriptionTv" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/linkFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:elevation="0dp"
+                android:src="@drawable/ic_arrow_forward"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/shareFab"
+                app:layout_constraintTop_toBottomOf="@+id/newsDescriptionTv" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+</com.news.android.himanshu.newspin.elasticView.ElasticDragDismissFrameLayout>

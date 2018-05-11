@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/splashIv"
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_size"
+        android:layout_centerInParent="true"
+        android:src="@drawable/newspin_splash" />
+
+    <TextView
+        android:id="@+id/splashTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashIv"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="false"
+        android:text="NewsPin"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/app_title_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

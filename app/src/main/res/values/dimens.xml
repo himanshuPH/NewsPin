@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="news_detail_image">250dp</dimen>
+    <dimen name="logo_size">100dp</dimen>
+    <dimen name="app_title_size">24sp</dimen>
+</resources>

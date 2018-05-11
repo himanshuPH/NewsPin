@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorPrimary">#D7353E</color>
+    <color name="colorPrimaryDark">#D7353E</color>
+    <color name="colorAccent">#D7353E</color>
+    <color name="dark_gray_shade">#7e7e7e</color>
+    <color name="orange">#E65100</color>
+    <color name="green">#00C853</color>
+    <color name="blue">#0091EA</color>
+    <color name="purple">#6200EA</color>
+    <color name="cyan">#00B8D4</color>
+    <color name="pink">#C51162</color>
+    <color name="scrim">#99323232</color>
+    <color name="dark_icon">#99000000</color>
+    <color name="mid_grey">#40808080</color>
+    <color name="light_grey">#fff5f5f5</color>
+
+    <drawable name="completedTaskBackground">#CCCCCC</drawable>
+
+    <drawable name="touchFeedback">#CFD8DC</drawable>
+
+</resources>

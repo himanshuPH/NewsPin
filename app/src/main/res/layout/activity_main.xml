@@ -1,0 +1,24 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <include layout="@layout/fragment_container" />
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        app:bb_activeTabColor="@color/colorPrimary"
+        app:bb_behavior="shy"
+        app:bb_inActiveTabColor="@android:color/darker_gray"
+        app:bb_showShadow="true"
+        app:bb_tabXmlResource="@xml/bottom_nav_menu" />
+
+
+</android.support.design.widget.CoordinatorLayout>

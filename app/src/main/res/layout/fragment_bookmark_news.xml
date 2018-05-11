@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:gravity="center"
+    app:layout_behavior="@string/scroll_behavior">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bookmarkNewsListRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/news_list_item"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/errorTv"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:drawableTop="@drawable/ic_error_outline_black"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No bookmark news found"/>
+</RelativeLayout>
