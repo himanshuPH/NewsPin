@@ -30,6 +30,8 @@ git clone https://github.com/HimanshuHP/NewsPin.git
 - Place your NewsAPI key in [gradle.properties](https://github.com/HimanshuHP/NewsPin/blob/master/gradle.properties) file.<br/>
 - Place your fabric key in [AndroidManifest.xml](https://github.com/HimanshuHP/NewsPin/blob/master/app/src/main/AndroidManifest.xml) file.
 
+### Note : Instead of adding pull-to-refresh or pagination, I have put check of 1 hr for fetching new articles due to newsapi.org free plan
+
 ## License
 
     MIT License
